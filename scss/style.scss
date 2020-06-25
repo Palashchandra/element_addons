@@ -1,0 +1,101 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author: Droitthemes
+@URL: http://droitthemes.com/
+Author E-mail: 
+
+This file contains the styling for the actual template, this
+is the file you need to edit to change the look of the
+template.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: NIRO
+@Author:  Md. Shahadat Hussain
+@Developed By: Palash
+@Developer URL: http://droitthemes.com/
+Author E-mail: 
+
+@Default Styles
+
+Table of Content:
+01/ Variables
+02/ mixins
+03/ reset
+04/ button
+05/ header
+06/ banner part
+07/ about
+08/ services section
+09/ gallery
+10/ portfolio section 
+11/ testimonial section 
+12/ cta part 
+13/ client list section 
+14/ subscribe_form section 
+15/ vartical slidebanner 
+16/ profile info 
+17/ portfolio grid style 
+18/ dark grid style 
+19/ skil list section 
+20/ breadcrumb part 
+21/ blog section 
+22/ team member part 
+23/ countdown section 
+24/ blog details 
+25/ blog Page 
+26/ sidebar 
+27/ contact section 
+28/ faq intro 
+29/ faq cta part 
+30/ pricing 
+31/ single page service 
+32/ shop list section 
+33/ multiScroll section 
+34/ coming soon 
+35/ error page content 
+36/ cart page content 
+37/ portfolio details 
+38/ product details 
+39/ center portfolio part 
+40/ fullpage 
+41/ footer
+=====================================================================*/ 
+
+//variables css
+@import "variables";
+
+//mixins css
+@import "mixins";
+
+//reset css
+@import "reset";
+
+//button css
+@import "button";
+
+//header part style css
+@import "header";
+
+//breadcrumb part style css
+@import "breadcrumb";
+
+//info box part style css
+@import "info_box_section";
+
+//cta part style css
+@import "cta";
+
+//icon box style css
+@import "icon_box";
+
+//icon box style css
+@import "step_flow";
+
+//testimonial slider style css
+@import "testimonial_slider";
+
+//progressbar style css
+@import "progressbar";
+
+//footer style css
+@import "footer";

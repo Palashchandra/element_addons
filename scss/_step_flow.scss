@@ -1,0 +1,202 @@
+.single_step_flow_box{
+    position: relative;
+    text-align: center;
+    @media #{$tab}{
+        margin-bottom: 40px;
+    }
+    h4{
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 45px;
+        @media #{$tab}{
+            margin-top: 20px;
+        }
+        a{
+            color: $heading_color;
+            &:hover{
+                color: $base_color;
+            }
+        }
+    }
+    p{
+        margin-top: 16px;
+    }
+    .step_flow_icon{
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        i{
+            font-size: 44px;
+            color: $white;
+
+        }
+        .step_tricker{
+            color: #554bfe;
+            font-size: 12px;
+            text-transform: uppercase;
+            border-radius: 20px;
+            background-color: rgba($color: #554bfe, $alpha: .1);
+            position: absolute;
+            right: 6px;
+            top: 6px;
+            height: 22px;
+            width: 50px;
+            line-height: 22px;
+            text-align: center;
+        }
+    }
+    &.style_1{
+        .step_flow_icon{
+            width: 150px;
+            height: 150px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 20px 60px 0px rgba(5, 19, 69, 0.14);
+        }
+        .arrow_img{
+            position: absolute;
+            right: -116%;
+            top: 50%;
+            transform: translateY(-50%);
+            @media #{$tab}{
+                display: none;
+            }
+            @media #{$medium_device}{
+                right: -93%;
+            }
+        }
+        i{
+            background: linear-gradient(to bottom, #ff5e85 0%, #6a28ff 100%);
+            color:transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+
+        }
+    }
+    &.style_2{
+        .step_flow_icon{
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            border-radius: 20px;
+            i{
+                font-size: 40px;
+            }
+            .arrow_img{
+                position: absolute;
+                right: -142%;
+                top: 50%;
+                transform: translateY(-50%);
+                @media #{$tab}{
+                    display: none;
+                }
+                @media #{$medium_device}{
+                    right: -111%;
+                }
+            }
+            &.bg_color_1{
+                background-color: rgb(23, 201, 149);
+                box-shadow: 1.392px 9.903px 30px 0px rgba(23, 201, 149, 0.3);
+            }
+            &.bg_color_2{
+                background-color: rgb(254, 126, 75);
+                box-shadow: 1.392px 9.903px 30px 0px rgba(254, 126, 75, 0.3);
+            }
+            &.bg_color_3{
+                    background-color: rgb(85, 75, 254);
+                    box-shadow: 1.392px 9.903px 30px 0px rgba(85, 75, 254, 0.3);
+            }
+        }
+    }
+    &.style_3{
+        .step_flow_icon{
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 30px 70px 0px rgba(5, 19, 69, 0.1);
+            width: 150px;
+            height: 150px;
+            .count_tricker{
+                height: 30px;
+                width: 30px;
+                line-height: 30px;
+                text-align: center;
+                font-size: 14px;
+                color: $white;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                background-color: #12c379;
+                border-radius: 50%;
+            }
+            .arrow_img{
+                position: absolute;
+                right: -120%;
+                top: 50%;
+                transform: translateY(-50%);
+                @media #{$medium_device}{
+                    right: -88%;
+                }
+                @media #{$tab}{
+                    display: none;
+                }
+            }
+        }
+    }
+    &.style_4{
+        .step_flow_icon{
+            border-width: 2px;
+            border-color: rgb(218, 218, 232);
+            border-style: solid;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            width: 146px;
+            height: 146px;
+            .arrow_img{
+                position: absolute;
+                right: -110%;
+                top: 50%;
+                transform: translateY(-50%);
+                @media #{$tab}{
+                    display: none;
+                }
+                @media #{$medium_device}{
+                    right: -88%;
+                }
+            }
+        }
+    }
+    &.style_5{
+        .step_flow_icon{
+            border-width: 2px;
+            border-color: rgb(218, 218, 232);
+            border-style: dotted;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+            width: 146px;
+            height: 146px;
+            .arrow_img{
+                position: absolute;
+                right: -114%;
+                top: 50%;
+                transform: translateY(-50%);
+                @media #{$tab}{
+                    display: none;
+                }
+                @media #{$medium_device}{
+                    right: -88%;
+                }
+            }
+        }
+    }
+}
+.col-lg-4{
+    &:last-child{
+        .step_flow_icon{
+            .arrow_img{
+                display: none;
+            }
+        }
+    }
+}

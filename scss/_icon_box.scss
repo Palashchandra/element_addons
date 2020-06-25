@@ -1,0 +1,246 @@
+.single_icon_box{
+    position: relative;
+    &.style_1{
+        padding: 40px 40px 50px;
+        text-align: center;
+        width: 100%;
+        background-color: $white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px 0px rgba(5, 19, 69, 0.1);
+        margin-top: 60px;
+        @include transform_time(.3s);
+        border-top: 4px solid transparent;
+        @media #{$tab}{
+            padding: 30px 30px 40px;
+            margin-top: 30px;
+        }
+        h4{
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 35px;
+            margin-bottom: 0;
+            @media #{$tab}{
+                margin-top: 20px;
+            }
+            a{
+                color: $heading_color;
+                &:hover{
+                    color: $base_color;
+                }
+            }
+        }
+        &:hover{
+            border-top: 4px solid $base_color;
+            box-shadow: 0px 30px 30px 0px rgba(5, 19, 69, 0.1),0px -4px 0px 0px rgba(226, 51, 95, 0.004);
+        }
+    }
+    &.style_2{
+        padding: 50px 40px;
+        @include transform_time(.3s);
+        border: 1px solid #f2f2f6;
+        @media #{$mobile}{
+            padding: 25px 20px;
+            margin-bottom: 30px;
+        }
+        @media #{$tab_device}{
+            padding: 35px 30px;
+            margin-bottom: 30px;
+        }
+        &:hover{
+            margin-top: -10px;
+        }
+        .info_box_icon{
+            border-radius: 20px;
+            background-color: rgb(85, 75, 254);
+            box-shadow: 1.392px 9.903px 30px 0px rgba(85, 75, 254, 0.3);
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            display: inline-block;
+            font-size: 30px;
+            color: $white;
+            margin-bottom: 40px;
+            @media #{$tab}{
+                margin-bottom: 20px;
+            }
+            &.orangr_bg{
+                background-color: rgb(254, 126, 75);
+                box-shadow: 1.392px 9.903px 30px 0px rgba(254, 126, 75, 0.3);                
+            }
+            &.green_bg{
+                background-color: rgb(23, 201, 149);
+                box-shadow: 1.392px 9.903px 30px 0px rgba(23, 201, 149, 0.3);
+            }
+        }
+        .mb_40{
+            margin-bottom: 40px;
+            @media #{$tab}{
+                margin-bottom: 20px;
+            }
+        }
+        h4{
+            a{
+                color: $heading_color;
+                &:hover{
+                    color: $base_color;
+                }
+            }
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+    }
+    &.style_3{
+        padding: 50px 40px 69px;
+        background-color: $white;
+        @include transform_time(.3s);
+        box-shadow: 0px 40px 50px 0px rgba(6, 10, 36, 0.1);
+        @media #{$mobile}{
+            padding: 25px 20px;
+            margin-bottom: 30px;
+        }
+        @media #{$tab_device}{
+            padding: 35px 30px;
+            margin-bottom: 30px;
+        }
+        &:hover{
+            margin-top: -10px;
+        }
+        i{
+            margin-bottom: 35px;
+            font-size: 40px;
+            color: #5443f9;
+            display: inline-block;
+            @media #{$tab}{
+                margin-bottom: 20px;
+            }
+        }
+        h4{
+            a{
+                color: $heading_color;
+                &:hover{
+                    color: $base_color;
+                }
+            }
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+
+    }
+    &.bg_color_1{
+        background-color: #17c995;
+        border-radius: 10px;
+        h4 a,i{
+            color: $white;
+        }
+        i{
+            font-size: 50px;
+        }
+    }
+    &.bg_color_2{
+        background-color: #fc4c78;
+        border-radius: 10px;
+        h4 a,i{
+            color: $white;
+        }
+        i{
+            font-size: 50px;
+        }
+    }
+    &.bg_color_3{
+        background-color: #554bfe;
+        border-radius: 10px;
+        h4 a,i{
+            color: $white;
+        }
+        i{
+            font-size: 50px;
+        }
+    }
+    &.style_4{
+        padding: 50px 40px 45px;
+        @include transform_time(.3s);
+        border: 1px solid #f2f2f6;
+        @media #{$mobile}{
+            padding: 25px 20px;
+            margin-bottom: 30px;
+        }
+        @media #{$tab_device}{
+            padding: 35px 30px;
+            margin-bottom: 30px;
+        }
+        &:hover{
+            margin-top: -10px;
+        }
+        .info_box_icon{
+            border-radius: 50%;
+            background-color: rgba($color: #44af44, $alpha: .10);
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            text-align: center;
+            display: inline-block;
+            font-size: 40px;
+            color: #44af44;
+            margin-bottom: 40px;
+            @media #{$tab}{
+                margin-bottom: 20px;
+            }
+            &.bg_2{
+                background-color: rgba($color: #554bff, $alpha: .10);    
+                color: #554bff;        
+            }
+            &.bg_3{
+                background-color: rgba($color: #10cbcf, $alpha: .10);    
+                color: #10cbcf; 
+            }
+        }
+        .mb_40{
+            margin-bottom: 40px;
+            @media #{$tab}{
+                margin-bottom: 20px;
+            }
+        }
+        h4{
+            a{
+                color: $heading_color;
+                &:hover{
+                    color: $base_color;
+                }
+            }
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+    }
+}
+.icon_box_section{
+    &.bg_img{
+        @include background ("../img/1.png");
+    }
+}
+.tricker{
+    font-size: 12px;
+    text-transform: uppercase;
+    width: 55px;
+    height: 24px;
+    border-radius: 20px;
+    line-height: 24px;
+    text-align: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: inline-block;
+    color: $white;
+    &.bg_1{
+        background-color: #5443f9;
+    }
+    &.bg_2{
+        background-color: #0cc87a;
+    }
+    &.bg_3{
+        background-color: #e2335f;
+    }
+}

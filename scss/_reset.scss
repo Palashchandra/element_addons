@@ -466,7 +466,10 @@ button:focus,
 
 .section_tittle {
     margin-bottom: 60px;
-    @media #{$mobile} {
+    @media #{$tab} {
+        margin-bottom: 40px;
+    }
+    @media #{$medium_device} {
         margin-bottom: 50px;
     }
     &.mb_10{
@@ -483,20 +486,18 @@ button:focus,
         @media #{$mobile} {
             font-size: 25px;
             line-height: 32px;
+            margin-bottom: 15px;
         }
-
         @media #{$tab_device} {
             font-size: 30px;
             line-height: 38px;
+            margin-bottom: 15px;
         }
     }
 }
-
 .boxShadow{
     box-shadow: 0px 30px 50px 0px rgba(5, 19, 69, 0.1);
 }
-
-
 .navText {
     .owl-nav button.owl-next,
     .owl-nav button.owl-prev {
@@ -518,12 +519,10 @@ button:focus,
         z-index: 99;
         box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.06);
         background-color: $white;
-
         img {
             max-width: 30px;
             @include transform_time(.3s);
         }
-
         &:hover {
             background-color: $base_color;
             border: 1px solid $base_color;
@@ -534,7 +533,6 @@ button:focus,
                 filter: brightness(0) invert(1);
             }
         }
-
         @media #{$tab_device} {
             left: 20px;
         }
@@ -543,7 +541,6 @@ button:focus,
             font-size: 17px;
         }
     }
-
     .owl-nav button.owl-next {
         left: auto;
         right: -15%;
@@ -552,13 +549,10 @@ button:focus,
             right: 20px;
         }
     }
-
     &.section_bg {
-
         .owl-nav button.owl-next,
         .owl-nav button.owl-prev {
             background-color: $white;
-
             &:hover {
                 background-color: $base_color;
             }

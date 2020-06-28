@@ -1,0 +1,299 @@
+.social_icon_box {
+    &.section_padding{
+        padding: 160px 0;
+        @media #{$tab}{
+            padding: 80px 0;
+        }
+        @media #{$medium_device}{
+            padding: 100px 0;
+        }
+    }
+    &.padding_top{
+        padding-top: 160px;
+        @media #{$tab}{
+            padding-top: 80px;
+        }
+        @media #{$medium_device}{
+            padding-top: 100px;
+        }
+    }
+    &.section_bottom{
+        padding-bottom: 160px;
+        @media #{$tab}{
+            padding-bottom: 80pxx
+        }
+        @media #{$medium_device}{
+            padding-bottom: 100px;
+        }
+    }
+    &.social_icon_bg{
+        @include background ('../img/bg_4.png');
+        position: relative;
+        padding-bottom: 150px;
+        z-index: 1;
+        @media #{$tab}{
+            padding-bottom: 80px;
+        }
+        .progressl_shape_1{
+            position: absolute;
+            right: 20%;
+            bottom: 10%;
+            z-index: -1;
+            @media #{$tab}{
+                display: none;
+            }
+        }
+        .progressl_shape_2{
+            position: absolute;
+            top: 25%;
+            left: 20px;
+            z-index: -1;
+        }
+        .progressl_shape_3{
+            position: absolute;
+            right: 8%;
+            bottom: 35%;
+            z-index: -1;
+        }
+        .progressl_shape_4{
+            position: absolute;
+            top: 20%;
+            left: 0;
+            z-index: -1;
+
+        }
+        .progressl_shape_5{
+            position: absolute;
+            right: 0;
+            top: 20%;
+            z-index: -1;
+        }
+        .progressl_shape_6{
+            position: absolute;
+            bottom: 25%;
+            left: 10%;
+            z-index: -1;
+        }
+    }
+}
+
+.social_icon_btn {
+    text-align: center;
+    &.style_1 {
+        .social_btn {
+            display: inline-block;
+            padding: 7px 22px;
+            margin: 0 8px;
+
+            &.fb {
+                border: 2px solid #375eaf;
+                color: #375eaf;
+                border-radius: 6px;
+
+                &:hover {
+                    background-color: #375eaf;
+                    color: $white;
+                }
+            }
+
+            &.twitter {
+                border: 2px solid #1da1f2;
+                color: #1da1f2;
+                border-radius: 6px;
+
+                &:hover {
+                    background-color: #1da1f2;
+                    color: $white;
+                }
+            }
+
+            &.google {
+                border: 2px solid #ea4335;
+                color: #ea4335;
+                border-radius: 6px;
+
+                &:hover {
+                    background-color: #ea4335;
+                    color: $white;
+                }
+            }
+
+            &.linkdin {
+                border: 2px solid #0073b1;
+                color: #0073b1;
+                border-radius: 6px;
+
+                &:hover {
+                    background-color: #0073b1;
+                    color: $white;
+                }
+            }
+
+            &.inst {
+                border: 2px solid #c13584;
+                color: #c13584;
+                border-radius: 6px;
+
+                &:hover {
+                    background-color: #c13584;
+                    color: $white;
+                }
+            }
+        }
+    }
+    &.style_2 {
+        .social_btn {
+            display: inline-block;
+            padding: 13px 20px;
+            margin: 0 8px;
+            &.fb {
+                border: 1px solid #ebedf2;
+                color: #375eaf;
+                border-radius: 4px;
+                &:hover {
+                    background-color: #375eaf;
+                    color: $white;
+                    border: 1px solid #375eaf;
+                    box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+                }
+            }
+            &.twitter {
+                border: 1px solid #ebedf2;
+                color: #1da1f2;
+                border-radius: 4px;
+                &:hover {
+                    background-color: #1da1f2;
+                    color: $white;
+                    border: 1px solid #1da1f2;
+                    box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+                }
+            }
+            &.linkdin {
+                border: 1px solid #ebedf2;
+                color: #2977c9;
+                border-radius: 4px;
+                &:hover {
+                    background-color: #2977c9;
+                    color: $white;
+                    border: 1px solid #2977c9;
+                    box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+                }
+            }
+            &.pinterest {
+                border: 1px solid #ebedf2;
+                color: #f90d4a;
+                border-radius: 4px;
+                &:hover {
+                    background-color: #f90d4a;
+                    color: $white;
+                    border: 1px solid #f90d4a;
+                    box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+                }
+            }
+            &.skype {
+                border: 1px solid #ebedf2;
+                color: #00b9f5;
+                border-radius: 4px;
+                &:hover {
+                    background-color: #00b9f5;
+                    color: $white;
+                    border: 1px solid #00b9f5;
+                    box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+                }
+            }
+        }
+    }
+    &.style_3 {
+        .social_btn {
+            display: inline-block;
+            padding: 13px 20px;
+            margin: 0 8px 20px;
+            border-radius: 50%;
+            background-color: $white;
+            box-shadow: 0px 2px 4px 0px rgba(5, 19, 69, 0.08);
+            &:hover {
+                box-shadow: 0px 20px 20px 0px rgba(5, 19, 69, 0.1);
+            }
+            &.fb {
+                color: #375eaf;
+            }
+            &.twitter {
+                color: #1da1f2;
+            }
+            &.linkdin {
+                color: #2977c9;
+            }
+            &.pinterest {
+                color: #f90d4a;
+            }
+            &.skype {
+                color: #00b9f5;
+            }
+        }
+    }
+    &.style_4 {
+        .social_btn {
+            display: inline-block;
+            padding: 13px 20px;
+            margin: 0 8px 20px;
+            border-radius: 50%;
+            background-color: $white;
+            box-shadow: 0px 2px 4px 0px rgba(5, 19, 69, 0.08);
+            &.fb {
+                color: #375eaf;
+                border: 2px solid #375eaf;
+                &:hover {
+                    color: $white;
+                    background-color: #375eaf;
+                    box-shadow: 0px 20px 20px 0px rgba(#375eaf, 0.3);
+                }
+            }
+            &.twitter {
+                color: #1da1f2;
+                border: 2px solid #1da1f2;
+                &:hover {
+                    color: $white;
+                    background-color: #1da1f2;
+                    box-shadow: 0px 20px 20px 0px rgba(#1da1f2, 0.3);
+                }
+            }
+            &.linkdin {
+                color: #2977c9;
+                border: 2px solid #2977c9;
+                &:hover {
+                    color: $white;
+                    background-color: #2977c9;
+                    box-shadow: 0px 20px 20px 0px rgba(#2977c9, 0.3);
+                }
+            }
+            &.pinterest {
+                color: #f90d4a;
+                border: 2px solid #f90d4a;
+                &:hover {
+                    color: $white;
+                    background-color: #f90d4a;
+                    box-shadow: 0px 20px 20px 0px rgba(#f90d4a, 0.3);
+                }
+            }
+            &.skype {
+                color: #00b9f5;
+                border: 2px solid #00b9f5;
+                &:hover {
+                    color: $white;
+                    background-color: #00b9f5;
+                    box-shadow: 0px 20px 20px 0px rgba(#00b9f5, 0.3);
+                }
+            }
+        }
+    }
+    @media #{$tab}{
+        .social_btn {
+            margin: 8px !important;
+        }
+    }
+    @media #{$medium_device}{
+        .social_btn {
+            margin: 8px !important;
+        }
+    }
+}

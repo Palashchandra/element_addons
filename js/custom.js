@@ -337,7 +337,7 @@
         throttle: 50,
         lazyAttr: null,
         debug: true
-     });
+    });
 
     $('.style_2').onScreen({
         container: window,
@@ -368,8 +368,94 @@
         throttle: 50,
         lazyAttr: null,
         debug: true
-     });
+    });
+    
+    $('.style_3').onScreen({
+        container: window,
+        direction: 'vertical',
+        doIn: function() {
+            var fillbar_9 = $('#bar9');
+            if (fillbar_9.length) {
+                fillbar_9.barfiller({
+                });
+            };
+            var fillbar_10 = $('#bar10');
+            if (fillbar_10.length) {
+                fillbar_10.barfiller({
+                });
+            };
+            var fillbar_11 = $('#bar11');
+            if (fillbar_11.length) {
+                fillbar_11.barfiller({
+                });
+            };
+            var fillbar_12 = $('#bar12');
+            if (fillbar_12.length) {
+                fillbar_12.barfiller({
+                });
+            };
+            var fillbar_13 = $('#bar13');
+            if (fillbar_13.length) {
+                fillbar_13.barfiller({
+                });
+            };
+        },
+        tolerance: 0,
+        throttle: 50,
+        lazyAttr: null,
+        debug: true
+    });
 
+
+    /*-------------------------------------------------------------------------------
+	  progress bar js
+	-------------------------------------------------------------------------------*/
+    function circle_progress() {
+        if ($(".circle").length) {
+            $(".circle").each(function () {
+                $(".circle").appear(
+                    function () {
+                        $(".circle").circleProgress({
+                            startAngle: -14.1,
+                            size: 200,
+                            duration: 9000,
+                            easing: "circleProgressEase",
+                            emptyFill: "#fafafa ",
+                            lineCap: "round",
+                            thickness: 10,
+                        });
+                    }, {
+                        triggerOnce: true,
+                        offset: "bottom-in-view",
+                    }
+                );
+            });
+        }
+    }
+    circle_progress();
+
+    //slider carousel js
+    var style_1 = $(".style_1");
+    if (style_1.length) {
+        style_1.owlCarousel({
+            items: 1,
+            loop: true,
+            nav: true,
+            navText: ["<i class='arrow_carrot-left'></i>", "<i class='arrow_carrot-right'></i>"],
+            dots: false,
+            autoplay: true,
+            autoplayHoverPause: true,
+            smartSpeed: 500,
+            responsive: {
+                0: {
+                    nav: false
+                },
+                768: {
+                    nav: true
+                }
+            },
+        });
+    }
     
 
 }(jQuery));

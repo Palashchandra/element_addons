@@ -1,16 +1,84 @@
+.progressbar_section{
+    .smile_face{
+        text-align: center;
+        margin-top: 45px;
+    }
+    
+    &.progressbar_bg{
+        @include background ('../img/progress_bg.png');
+        position: relative;
+        padding-bottom: 150px;
+        z-index: 1;
+        @media #{$tab}{
+            padding-bottom: 80px;
+        }
+        .progressl_shape_1{
+            position: absolute;
+            right: 20%;
+            bottom: 10%;
+            z-index: -1;
+            @media #{$tab}{
+                display: none;
+            }
+        }
+        .progressl_shape_2{
+            position: absolute;
+            top: 25%;
+            left: 20px;
+            z-index: -1;
+        }
+        .progressl_shape_3{
+            position: absolute;
+            right: 8%;
+            bottom: 35%;
+            z-index: -1;
+        }
+        .progressl_shape_4{
+            position: absolute;
+            top: 20%;
+            left: 0;
+            z-index: -1;
+
+        }
+        .progressl_shape_5{
+            position: absolute;
+            right: 0;
+            top: 20%;
+            z-index: -1;
+        }
+        .progressl_shape_6{
+            position: absolute;
+            bottom: 25%;
+            left: 10%;
+            z-index: -1;
+        }
+    }
+}
 .progressbar_content{
     h2{
+        font-size: 34px;
+        font-weight: 700;
+    }
+    h3{
         font-size: 26px;
         font-weight: 700;
         margin-bottom: 15px;
     }
+    h4{
+        font-size: 20px;
+        margin: 18px 0 30px;
+    }
     p{
         margin-bottom: 30px;
     }
+    
 }
 
 .skil_progressbar {
     &.style_1{
+        @media #{$mobile}{
+            margin-top: 50px;
+        }
         .single_skil_progressbar{
             p{
                 color: #595b69;
@@ -18,8 +86,140 @@
                 margin-bottom: 5px;
                 font-weight: 600;
             }
+            .barfiller{
+                .fill{
+                    background-color: #17c995;
+                   
+                }
+            }
             .tip{
                 font-weight: 600;
+            }
+        }
+    }
+    &.style_2{
+        .single_skil_progressbar{
+            p{
+                color: #595b69;
+                font-size: 14px;
+                margin-bottom: 5px;
+                font-weight: 600;
+            }
+            .barfiller{
+                height: 15px;
+                .fill{
+                    background-color: #554bfe;
+                   
+                }
+            }
+            .tip{
+                font-weight: 600;
+            }
+        }
+    }
+    &.style_3{
+        .single_skil_progressbar{
+            position: relative;
+            
+            p{
+                color: #fff;
+                font-size: 12px;
+                font-weight: 600;
+                position: absolute;
+                left: 21px;
+                top: 0;
+                z-index: 2;
+                text-transform: uppercase;
+            }
+            .barfiller{
+                height: 30px;
+                .fill{
+                    background-color: #fe7e4b;
+                }
+            }
+            &:nth-child(1){
+                .fill{
+                    background-color: #fe7e4b;
+                }
+            }
+            &:nth-child(2){
+                .fill{
+                    background-color: #554bfe;
+                }
+            }
+            &:nth-child(3){
+                .fill{
+                    background-color: #17c995;
+                }
+            }
+            &:nth-child(4){
+                .fill{
+                    background-color: #f94977;
+                }
+            }
+            &:nth-child(5){
+                .fill{
+                    background-color: #1db0f4;
+                }
+            }
+            .tip{
+                font-weight: 600;
+                margin-top: 2px;
+                padding: 2px 4px;
+                font-size: 14px;
+                color: #fff;
+                left: 0px;
+                position: absolute;
+                z-index: 2;
+                margin-left: -20px;
+            }
+        }
+    }
+}
+.circle_progressbar{
+    text-align: center;
+    @media #{$tab}{
+        margin-bottom: 30px;
+    }
+    .circle {
+        border-width: 30px;
+        border-color: rgb(255, 255, 255);
+        border-style: solid;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(235, 241, 243);
+        border-radius: 50%;
+        box-shadow: 0px 30px 30px 0px rgba(5, 19, 69, 0.14);
+        width: 200px;
+        height: 200px;
+        z-index: 154;
+        margin: 0 auto;
+        position: relative;
+    }
+    h4{
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 40px;
+        @media #{$tab}{
+            margin-top: 20px;
+        }
+    }
+    .number{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 36px;
+        color: #1db0f4;
+    }
+}
+.progressbar_section {
+    .single_skil_progressbar{
+        &:last-child{
+            .barfiller{
+                margin-bottom: 0;
             }
         }
     }

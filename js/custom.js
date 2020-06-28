@@ -279,30 +279,97 @@
     }
 
     //progressbar js
-    var fillbar_1 = $('.fillbar_1');
-    if (fillbar_1.length) {
-        fillbar_1.rProgressbar({
-            percentage: 80
-        });
-    };
-    var fillbar_2 = $('.fillbar_2');
-    if (fillbar_2.length) {
-        fillbar_2.rProgressbar({
-            percentage: 90
-        });
-    };
-    var fillbar_3 = $('.fillbar_3');
-    if (fillbar_3.length) {
-        fillbar_3.rProgressbar({
-            percentage: 70
-        });
-    };
-    var fillbar_4 = $('.fillbar_4');
-    if (fillbar_4.length) {
-        fillbar_4.rProgressbar({
-            percentage: 88
-        });
-    };
+    // $(window).scroll(function() {
+    //     var top_of_element = $(".skil_progressbar").offset().top;
+    //     var bottom_of_element = $(".skil_progressbar").offset().top + $(".skil_progressbar").outerHeight();
+    //     var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+    //     var top_of_screen = $(window).scrollTop();
+    
+    //     if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+    //         var fillbar_1 = $('#bar1');
+    //         if (fillbar_1.length) {
+    //             fillbar_1.barfiller({
+    //             });
+    //         };
+    //         var fillbar_2 = $('#bar2');
+    //         if (fillbar_2.length) {
+    //             fillbar_2.barfiller({
+    //             });
+    //         };
+    //         var fillbar_3 = $('#bar3');
+    //         if (fillbar_3.length) {
+    //             fillbar_3.barfiller({
+    //             });
+    //         };
+    //         var fillbar_4 = $('#bar4');
+    //         if (fillbar_4.length) {
+    //             fillbar_4.barfiller({
+    //             });
+    //         };
+    //     }
+    // });
+    $('.style_1').onScreen({
+        container: window,
+        direction: 'vertical',
+        doIn: function() {
+            var fillbar_1 = $('#bar1');
+            if (fillbar_1.length) {
+                fillbar_1.barfiller({
+                });
+            };
+            var fillbar_2 = $('#bar2');
+            if (fillbar_2.length) {
+                fillbar_2.barfiller({
+                });
+            };
+            var fillbar_3 = $('#bar3');
+            if (fillbar_3.length) {
+                fillbar_3.barfiller({
+                });
+            };
+            var fillbar_4 = $('#bar4');
+            if (fillbar_4.length) {
+                fillbar_4.barfiller({
+                });
+            };
+        },
+        tolerance: 0,
+        throttle: 50,
+        lazyAttr: null,
+        debug: true
+     });
+
+    $('.style_2').onScreen({
+        container: window,
+        direction: 'vertical',
+        doIn: function() {
+            var fillbar_5 = $('#bar5');
+            if (fillbar_5.length) {
+                fillbar_5.barfiller({
+                });
+            };
+            var fillbar_6 = $('#bar6');
+            if (fillbar_6.length) {
+                fillbar_6.barfiller({
+                });
+            };
+            var fillbar_7 = $('#bar7');
+            if (fillbar_7.length) {
+                fillbar_7.barfiller({
+                });
+            };
+            var fillbar_8 = $('#bar8');
+            if (fillbar_8.length) {
+                fillbar_8.barfiller({
+                });
+            };
+        },
+        tolerance: 0,
+        throttle: 50,
+        lazyAttr: null,
+        debug: true
+     });
+
     
 
 }(jQuery));

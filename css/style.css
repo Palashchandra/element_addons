@@ -173,7 +173,6 @@ body {
   margin: 0;
   font-size: 18px;
   font-weight: 400;
-  letter-spacing: 0em;
   line-height: 1.78;
   color: #888;
 }
@@ -825,26 +824,35 @@ button:focus,
     transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
   }
 }
-.progressbar {
+.barfiller {
   width: 100%;
-  margin-top: 5px;
-  margin-bottom: 25px;
+  height: 3px;
+  background: #e4e6ec;
   position: relative;
+  margin-bottom: 30px;
 }
 
-.proggress {
-  height: 4px;
-  width: 10px;
+.barfiller .fill {
+  display: block;
   position: relative;
+  width: 0px;
+  height: 100%;
+  z-index: 1;
+  background-color: #17c995;
 }
 
-.percentCount {
-  float: right;
-  margin-top: -42px;
-  clear: both;
-  font-weight: 400;
-  font-size: 18px;
-  color: #060a24;
+.barfiller .tipWrap {
+  display: none;
+}
+
+.barfiller .tip {
+  margin-top: -34px;
+  padding: 2px 4px;
+  font-size: 14px;
+  color: #595b69;
+  left: 0px;
+  position: absolute;
+  z-index: 2;
 }
 
 /**************** common css end ****************/
@@ -3275,6 +3283,16 @@ button:focus {
 }
 .progressbar_content p {
   margin-bottom: 30px;
+}
+
+.skil_progressbar.style_1 .single_skil_progressbar p {
+  color: #595b69;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.skil_progressbar.style_1 .single_skil_progressbar .tip {
+  font-weight: 600;
 }
 
 @media (max-width: 991px) {

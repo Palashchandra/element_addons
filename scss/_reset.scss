@@ -55,7 +55,6 @@ body {
     margin: 0;
     font-size: 18px;
     font-weight: 400;
-    letter-spacing: 0em;
     line-height: 1.78;
     color: #888;
 }
@@ -687,26 +686,36 @@ button:focus,
 }
 
 //progressbar css
-.progressbar {
+.barfiller {
     width: 100%;
-    margin-top: 5px;
-    margin-bottom: 25px;
+    height: 3px;
+    background: #e4e6ec;
     position: relative;
-}
-
-.proggress {
-    height: 4px;
-    width: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .barfiller .fill {
+    display: block;
     position: relative;
-}
+    width: 0px;
+    height: 100%;
+    z-index: 1;
+    background-color: #17c995;
+  }
+  
+  .barfiller .tipWrap { display: none; }
+  
+  .barfiller .tip {
+    margin-top: -34px;
+    padding: 2px 4px;
+    font-size: 14px;
+    color: #595b69;
+    left: 0px;
+    position: absolute;
+    z-index: 2;
+  }
+  
 
-.percentCount {
-    float: right;
-    margin-top: -42px;
-    clear: both;
-    font-weight: 400;
-    font-size: 18px;
-    color: $heading_color;
-}
-
+  
+  
 /**************** common css end ****************/

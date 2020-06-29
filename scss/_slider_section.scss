@@ -1,5 +1,115 @@
 .slider_section_inner {
-    .style_1{
-        
+    &.style_1{
+        margin-bottom: 35px;
+        .owl-prev, .owl-next{
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateX(-50%);
+            i{
+                font-size: 16px;
+                opacity:  .5;
+                color: $white;
+            }
+        }
+        .owl-next{
+            left: auto;
+            right: 30px;
+        }
+    }
+    &.style_2{
+        text-align: center;
+        @media #{$tab}{
+            margin-top: 30px;
+        }
+       .owl-dot{
+           height: 8px;
+           width: 8px;
+           border-radius: 50%;
+           background-color: #c1c3ce;
+           margin: 0 5px;
+           &.active{
+              background-color: #e2335f; 
+           }
+       } 
+    }
+    &.style_3{
+        @media #{$tab}{
+            margin-top: 30px;
+        }
+        .owl-prev, .owl-next{
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: $white !important;
+            @include transform_time(.3s);
+            i{
+                font-size: 13px;
+                color: #060a24;
+            }
+            &:hover{
+                background-color: #e2335f !important;
+                i{
+                    color: $white;
+                }
+            }
+        }
+        .owl-next{
+            left: auto;
+            right: 30px;
+        }
+        .single_slider_part{
+            position: relative;
+            .single_slider_content{
+                position: absolute;
+                left: 0;
+                top: 0;
+                padding: 40px;
+                @media #{$tab}{
+                    padding: 25px;
+                }
+                h5{
+                    color: #e2335f;
+                    font-size: 16px;
+                }
+                h2{
+                    font-size: 24px;
+                    font-weight: 600;
+                    
+                }
+            }
+        }
+        .active{
+            .single_slider_content{
+                h5{
+                    animation: fadeInRight .5s both .5s;
+                }
+                h2{
+                    animation: fadeInRight .5s both .6s;
+                }
+            }
+        }
+    }
+}
+.slider_section_content{
+    
+    h2{
+        font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 13px;
+        @media #{$tab}{
+            font-size: 20px;
+        }
+        span{
+            font-weight: 400;
+            display: block;
+            margin-bottom: 10px;
+        }
     }
 }

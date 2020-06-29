@@ -1,0 +1,22 @@
+.simple_image_grid {
+    .grid-item {
+        width: 17.9%;
+        margin-bottom: 30px;
+    }
+}
+
+.img_section_grid {
+    .grid-sizer,
+    .grid-item {
+        width: 33%;
+    }
+    // .gutter-sizer {
+    //     width: 30px;
+    // }
+    .big_width_1 {
+        width: 40%;
+    }
+    .big_width_2 {
+        width: 60%;
+    }
+}

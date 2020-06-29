@@ -1,0 +1,107 @@
+.carousel_section_content{
+    h2{
+        font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 13px;
+        @media #{$tab}{
+            font-size: 20px;
+        }
+        span{
+            font-weight: 400;
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+}
+.img_carousel_inner{
+    &.style_1{
+        .owl-prev, .owl-next{
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            text-align: center;
+            background-color: $white !important;
+            @include transform_time(.3s);
+            i{
+                font-size: 12px;
+                color: #060a24;
+            }
+            &:hover{
+                background-color: #e2335f !important;
+                i{
+                    color: $white;
+                }
+            }
+        }
+        .owl-next{
+            left: auto;
+            right: 20px;
+        }
+    }
+    &.style_2 {
+        .single_img_carousel{
+            position: relative;
+        }
+        .img_carousel_content{
+            padding: 30px 35px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            h4{
+                font-size: 18px;
+                line-height: 26px;
+                color: $white;
+                font-weight: 600;
+            }
+        }
+        .owl-dot{
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background-color: #c1c3ce;
+            margin: 0 5px;
+            margin-top: 60px;
+            &.active{
+               background-color: #e2335f; 
+            }
+        } 
+    }
+    &.style_3 {
+        .owl-prev, .owl-next{
+            position: absolute;
+            right: 0;
+            bottom: -100px;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: 1px solid #d6d7df !important;
+            @include transform_time(.3s);
+            i{
+                font-size: 12px;
+                color: #060a24;
+            }
+            &:hover{
+                background-color: #e2335f !important;
+                border: 1px solid #e2335f !important;
+                i{
+                    color: $white;
+                }
+            }
+        }
+        .owl-prev{
+            right: 50px;
+        }
+    }
+}

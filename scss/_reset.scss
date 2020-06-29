@@ -343,9 +343,25 @@ button:focus,
         margin-bottom: 25px !important;
     }
 }
+.mb_70 {
+    margin-bottom: 70px;
+    @media #{$tab} {
+        margin-bottom: 40px;
+    }
+}
+.mt_70 {
+    margin-top: 70px;
+    @media #{$tab} {
+        margin-top: 40px;
+    }
+}
 
 .gray_bg {
     background-color: #fbfbfd;
+}
+
+.pink_bg {
+    background-color: #f9f7f4;
 }
 
 .section_bg {
@@ -492,6 +508,22 @@ button:focus,
             font-size: 30px;
             line-height: 38px;
             margin-bottom: 15px;
+        }
+    }
+}
+
+.section_tittle_2{
+    h2{
+        font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 13px;
+        @media #{$tab}{
+            font-size: 20px;
+        }
+        span{
+            font-weight: 400;
+            display: block;
+            margin-bottom: 10px;
         }
     }
 }

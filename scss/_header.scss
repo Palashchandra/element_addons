@@ -1,6 +1,6 @@
 /******** header css here *********/
 
-.header_part {
+.dl_header_part {
     @include transform_time(.3s);
     .navbar-toggler {
         padding: 0px;
@@ -89,7 +89,7 @@
         padding: 0;
         @media #{$tab} {
             padding: 14px 0;
-            .cu_btn {
+            .dl_cu_btn {
                 margin-right: 15px;
                 padding: 8px 30px;
             }
@@ -129,7 +129,7 @@
             width: 100%;
         }
     }
-    .cu_btn{
+    .dl_cu_btn{
         font-size: 16px;
         font-weight: 600;
         text-transform: capitalize;
@@ -150,7 +150,7 @@
             background-color: $white;
             box-shadow: 0px 5px 10px #14303a15;
         }
-        .cu_btn{
+        .dl_cu_btn{
             display: none;
         }
     }
@@ -279,7 +279,7 @@
                         float: left;
                     }
                 }
-                .cu_btn {
+                .dl_cu_btn {
                     min-width: auto;
                 }
             }
@@ -563,7 +563,7 @@
         .sticky_none {
             display: none;
         }
-        .cu_btn {
+        .dl_cu_btn {
             color: $heading_color;
             &:hover {
                 color: $white;
@@ -743,7 +743,7 @@
                 margin-top: 20px;
             }
         }
-        .cu_btn {
+        .dl_cu_btn {
             margin-top: 50px;
             @media #{$tab} {
                 margin-top: 30px;
@@ -758,7 +758,7 @@
             h2 {
                 animation: fadeInUp .3s both .5s;
             }
-            .cu_btn {
+            .dl_cu_btn {
                 animation: fadeInUp .5s both .7s;
             }
         }

@@ -1,4 +1,4 @@
-.slider_section_inner {
+.dl_slider_section_inner  {
     &.style_1{
         margin-bottom: 35px;
         .owl-prev, .owl-next{
@@ -64,9 +64,9 @@
             left: auto;
             right: 30px;
         }
-        .single_slider_part{
+        .dl_single_slider_part{
             position: relative;
-            .single_slider_content{
+            .dl_single_slider_content{
                 position: absolute;
                 left: 0;
                 top: 0;
@@ -86,7 +86,7 @@
             }
         }
         .active{
-            .single_slider_content{
+            .dl_single_slider_content{
                 h5{
                     animation: fadeInRight .5s both .5s;
                 }
@@ -97,8 +97,7 @@
         }
     }
 }
-.slider_section_content{
-    
+.dl_slider_section_content{
     h2{
         font-size: 34px;
         font-weight: 700;

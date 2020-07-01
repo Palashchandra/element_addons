@@ -1,5 +1,5 @@
 /******** base color css ********/
-.cu_btn {
+.dl_cu_btn {
     display: inline-block;
     padding: 11px 16px;
     line-height: 18px;
@@ -90,10 +90,25 @@
         justify-content: center;
         font-family: $font_1;
         padding: 17px 40px;
-
+        
         &:hover {
             background-color: $base_color;
             border: 1px solid $base_color;
+        }
+    }
+
+    &.btn_5 {
+        background-color: transparent;
+        border: 2px solid $base_color;
+        color: $base_color;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $font_1;
+        
+        &:hover {
+            background-color: $base_color;
+            border: 2px solid $base_color;
         }
     }
 
@@ -320,7 +335,7 @@
     display: inline-block;
 
     &:after,
-    .cu_btn:after {
+    .dl_cu_btn:after {
         position: absolute;
         left: 0;
         top: 0;
@@ -332,7 +347,7 @@
     }
 
     &:before,
-    .cu_btn:before {
+    .dl_cu_btn:before {
         position: absolute;
         left: 0;
         top: 0;
@@ -343,7 +358,7 @@
         @include transform_time(.3s);
     }
 
-    .cu_btn {
+    .dl_cu_btn {
         padding: 22px 45px;
         border: 1px solid #ebebeb;
 

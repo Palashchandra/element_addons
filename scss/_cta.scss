@@ -1,4 +1,4 @@
-.cta_part{
+.dl_cta_part{
     @include background ("../img/cta_bg.png");
     padding: 135px 0;
     text-align: center;
@@ -26,7 +26,7 @@
             margin-bottom: 25px;
         }
     }
-    .cu_btn{
+    .dl_cu_btn{
         margin: 0 8px;
         @media #{$tab}{
             margin: 8px;

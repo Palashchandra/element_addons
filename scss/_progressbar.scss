@@ -54,7 +54,7 @@
         }
     }
 }
-.progressbar_content{
+.dl_progressbar_content{
     h2{
         font-size: 34px;
         font-weight: 700;
@@ -74,12 +74,12 @@
     
 }
 
-.skil_progressbar {
+.dl_skil_progressbar {
     &.style_1{
         @media #{$mobile}{
             margin-top: 50px;
         }
-        .single_skil_progressbar{
+        .dl_single_skil_progressbar{
             p{
                 color: #595b69;
                 font-size: 14px;
@@ -98,7 +98,7 @@
         }
     }
     &.style_2{
-        .single_skil_progressbar{
+        .dl_single_skil_progressbar{
             p{
                 color: #595b69;
                 font-size: 14px;
@@ -118,7 +118,7 @@
         }
     }
     &.style_3{
-        .single_skil_progressbar{
+        .dl_single_skil_progressbar{
             position: relative;
             
             p{
@@ -216,7 +216,7 @@
     }
 }
 .progressbar_section {
-    .single_skil_progressbar{
+    .dl_single_skil_progressbar{
         &:last-child{
             .barfiller{
                 margin-bottom: 0;

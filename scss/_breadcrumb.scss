@@ -1,4 +1,4 @@
-.breadcrumb_section{
+.dl_breadcrumb_section{
     height: 500px;
     @include background ('../img/breadcrumb_bg.png');
     display: flex;
@@ -7,7 +7,7 @@
     @media #{$tab}{
         height: 400px;
     }
-    .breadcrumb_part_inner{
+    .dl_breadcrumb_part_inner{
         text-align: center;
         padding-top: 95px;
         @media #{$tab}{

@@ -146,7 +146,7 @@
 
 
     //banner slider js
-    var full_height_slider = document.getElementById("testimonial_section_1");
+    var full_height_slider = document.getElementById("dl_testimonial_section_1");
     if (full_height_slider) {
         var swiper = new Swiper('.style_1', {
             slidesPerView: 1,
@@ -172,8 +172,8 @@
     }
 
     //banner slider js
-    var testimonial_slider_2 = document.getElementById("testimonial_slider_2");
-    if (testimonial_slider_2) {
+    var dl_testimonial_slider_2 = document.getElementById("dl_testimonial_slider_2");
+    if (dl_testimonial_slider_2) {
         var swiper = new Swiper('.style_2', {
             slidesPerView: 3,
             mousewheel: false,
@@ -210,8 +210,8 @@
     }
 
     //banner slider js
-    var testimonial_slider_3 = document.getElementById("testimonial_slider_3");
-    if (testimonial_slider_3) {
+    var dl_testimonial_slider_3 = document.getElementById("dl_testimonial_slider_3");
+    if (dl_testimonial_slider_3) {
         var swiper = new Swiper('.style_3', {
             slidesPerView: 1,
             mousewheel: false,
@@ -238,8 +238,8 @@
     }
 
     //banner slider js
-    var testimonial_slider_4 = document.getElementById("testimonial_slider_4");
-    if (testimonial_slider_4) {
+    var dl_testimonial_slider_4 = document.getElementById("dl_testimonial_slider_4");
+    if (dl_testimonial_slider_4) {
         var swiper = new Swiper('.style_4', {
             slidesPerView: 2,
             loop: true,
@@ -280,8 +280,8 @@
 
     //progressbar js
     // $(window).scroll(function() {
-    //     var top_of_element = $(".skil_progressbar").offset().top;
-    //     var bottom_of_element = $(".skil_progressbar").offset().top + $(".skil_progressbar").outerHeight();
+    //     var top_of_element = $(".dl_skil_progressbar").offset().top;
+    //     var bottom_of_element = $(".dl_skil_progressbar").offset().top + $(".dl_skil_progressbar").outerHeight();
     //     var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
     //     var top_of_screen = $(window).scrollTop();
 
@@ -422,9 +422,9 @@
     circle_progress();
 
     //slider carousel js
-    var active_slider_1 = $(".active_slider_1");
-    if (active_slider_1.length) {
-        active_slider_1.owlCarousel({
+    var dl_active_slider_1 = $(".dl_active_slider_1");
+    if (dl_active_slider_1.length) {
+        dl_active_slider_1.owlCarousel({
             items: 1,
             loop: true,
             nav: true,
@@ -446,9 +446,9 @@
     }
 
     //slider carousel js
-    var active_slider_2 = $(".active_slider_2");
-    if (active_slider_2.length) {
-        active_slider_2.owlCarousel({
+    var dl_active_slider_2 = $(".dl_active_slider_2");
+    if (dl_active_slider_2.length) {
+        dl_active_slider_2.owlCarousel({
             items: 1,
             loop: true,
             nav: false,
@@ -460,9 +460,9 @@
     }
 
     //slider carousel js
-    var active_slider_3 = $(".active_slider_3");
-    if (active_slider_3.length) {
-        active_slider_3.owlCarousel({
+    var dl_active_slider_3 = $(".dl_active_slider_3");
+    if (dl_active_slider_3.length) {
+        dl_active_slider_3.owlCarousel({
             items: 1,
             loop: true,
             nav: true,
@@ -571,7 +571,7 @@
     }
 
     //simple grid js
-    var gallery = $('.simple_image_grid_inner');
+    var gallery = $('.dl_simple_image_grid_inner');
     if (gallery.length) {
         gallery.imagesLoaded(function () {
             gallery.isotope({
@@ -582,17 +582,13 @@
             });
         })
     }
-    //image grid js
-    var img_grid_inner = $('.img_grid_inner');
-    if (img_grid_inner.length) {
-        img_grid_inner.imagesLoaded(function () {
-            img_grid_inner.masonry({
-                itemSelector: '.grid-item',
-                columnWidth: '.grid-sizer',
-                percentPosition: true
-            });
-        })
-    }
 
+    $(".dl_twentytwenty_container[data-orientation!='vertical']").twentytwenty({
+        default_offset_pct: 0.5
+    });
+    $(".dl_twentytwenty_container[data-orientation='vertical']").twentytwenty({
+        default_offset_pct: 0.5, orientation: 'vertical'
+    });
+      
 
 }(jQuery));

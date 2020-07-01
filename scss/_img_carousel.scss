@@ -1,4 +1,4 @@
-.carousel_section_content{
+.dl_carousel_section_content{
     h2{
         font-size: 34px;
         font-weight: 700;
@@ -13,7 +13,7 @@
         }
     }
 }
-.img_carousel_inner{
+.dl_img_carousel_inner{
     &.style_1{
         .owl-prev, .owl-next{
             position: absolute;
@@ -47,7 +47,7 @@
         }
     }
     &.style_2 {
-        .single_img_carousel{
+        .dl_single_img_carousel{
             position: relative;
         }
         .img_carousel_content{
@@ -55,6 +55,7 @@
             position: absolute;
             left: 0;
             bottom: 0;
+            text-align: left;
             h4{
                 font-size: 18px;
                 line-height: 26px;

@@ -1,5 +1,5 @@
-.social_icon_box {
-    &.section_padding{
+.dl_social_icon_box {
+    &.dl_section_padding{
         padding: 160px 0;
         @media #{$tab}{
             padding: 80px 0;
@@ -77,10 +77,10 @@
     }
 }
 
-.social_icon_btn {
+.dl_social_icon_btn {
     text-align: center;
     &.style_1 {
-        .social_btn {
+        .dl_social_btn {
             display: inline-block;
             padding: 7px 22px;
             margin: 0 8px;
@@ -142,7 +142,7 @@
         }
     }
     &.style_2 {
-        .social_btn {
+        .dl_social_btn {
             display: inline-block;
             padding: 13px 20px;
             margin: 0 8px;
@@ -204,7 +204,7 @@
         }
     }
     &.style_3 {
-        .social_btn {
+        .dl_social_btn {
             display: inline-block;
             padding: 13px 20px;
             margin: 0 8px 20px;
@@ -232,7 +232,7 @@
         }
     }
     &.style_4 {
-        .social_btn {
+        .dl_social_btn {
             display: inline-block;
             padding: 13px 20px;
             margin: 0 8px 20px;
@@ -287,12 +287,12 @@
         }
     }
     @media #{$tab}{
-        .social_btn {
+        .dl_social_btn {
             margin: 8px !important;
         }
     }
     @media #{$medium_device}{
-        .social_btn {
+        .dl_social_btn {
             margin: 8px !important;
         }
     }

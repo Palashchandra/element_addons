@@ -82,7 +82,7 @@ input:focus {
     }
 }
 
-.section_padding {
+.dl_section_padding {
     padding: 100px 0px;
 
     @media #{$medium_device} {
@@ -130,6 +130,24 @@ input:focus {
 
     @media #{$medium_device} {
         padding-bottom: 80px;
+    }
+}
+.pt_160 {
+    padding-top: 160px;
+    @media #{$tab} {
+        padding-top: 70px;
+    }
+    @media #{$medium_device} {
+        padding-top: 100px;
+    }
+}
+.pb_160 {
+    padding-bottom: 160px;
+    @media #{$tab} {
+        padding-bottom: 70px;
+    }
+    @media #{$medium_device} {
+        padding-bottom: 100px;
     }
 }
 
@@ -364,19 +382,22 @@ button:focus,
     background-color: #f9f7f4;
 }
 
-.section_bg {
+.dl_section_bg {
     background-color: #5747f9;
 }
 
-.section_bg_1 {
+.dl_section_bg_1 {
     @include background('../img/bg_1.png');
 }
-.section_bg_2 {
+.dl_section_bg_2 {
     @include background('../img/bg_2.png');
 }
 
-.section_bg_3 {
+.dl_section_bg_3 {
     @include background('../img/bg_3.png');
+}
+.dl_img_compare_box_bg {
+    @include background('../img/bg_5.png');
 }
 .wave_bg {
     @include background('../img/wave_bg.png');
@@ -480,7 +501,7 @@ button:focus,
     filter: brightness(0) invert(1);
 }
 
-.section_tittle {
+.dl_section_tittle {
     margin-bottom: 60px;
     @media #{$tab} {
         margin-bottom: 40px;
@@ -512,7 +533,7 @@ button:focus,
     }
 }
 
-.section_tittle_2{
+.dl_section_tittle_2{
     h2{
         font-size: 34px;
         font-weight: 700;
@@ -527,7 +548,7 @@ button:focus,
         }
     }
 }
-.boxShadow{
+.dl_boxShadow{
     box-shadow: 0px 30px 50px 0px rgba(5, 19, 69, 0.1);
 }
 .navText {
@@ -581,7 +602,7 @@ button:focus,
             right: 20px;
         }
     }
-    &.section_bg {
+    &.dl_section_bg {
         .owl-nav button.owl-next,
         .owl-nav button.owl-prev {
             background-color: $white;

@@ -1,5 +1,5 @@
-.footer_section{
-    .single_feature_footer{
+.dl_footer_section{
+    .dl_single_feature_footer{
         @media #{$tab}{
             margin-bottom: 30px;
         }
@@ -52,7 +52,7 @@
             border: 0px solid transparent;
             background-color: $white;
         }
-        .cu_btn{
+        .dl_cu_btn{
             padding: 14px 12px;
             min-width: auto;
             &:hover{

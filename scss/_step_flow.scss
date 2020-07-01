@@ -1,4 +1,4 @@
-.single_step_flow_box{
+.dl_single_step_flow_box{
     position: relative;
     text-align: center;
     @media #{$tab}{
@@ -21,7 +21,7 @@
     p{
         margin-top: 16px;
     }
-    .step_flow_icon{
+    .dl_step_flow_icon{
         position: relative;
         margin: 0 auto;
         display: flex;
@@ -49,7 +49,7 @@
         }
     }
     &.style_1{
-        .step_flow_icon{
+        .dl_step_flow_icon{
             width: 150px;
             height: 150px;
             background-color: rgb(255, 255, 255);
@@ -76,7 +76,7 @@
         }
     }
     &.style_2{
-        .step_flow_icon{
+        .dl_step_flow_icon{
             width: 120px;
             height: 120px;
             line-height: 120px;
@@ -111,7 +111,7 @@
         }
     }
     &.style_3{
-        .step_flow_icon{
+        .dl_step_flow_icon{
             border-radius: 50%;
             background-color: rgb(255, 255, 255);
             box-shadow: 0px 30px 70px 0px rgba(5, 19, 69, 0.1);
@@ -145,7 +145,7 @@
         }
     }
     &.style_4{
-        .step_flow_icon{
+        .dl_step_flow_icon{
             border-width: 2px;
             border-color: rgb(218, 218, 232);
             border-style: solid;
@@ -168,7 +168,7 @@
         }
     }
     &.style_5{
-        .step_flow_icon{
+        .dl_step_flow_icon{
             border-width: 2px;
             border-color: rgb(218, 218, 232);
             border-style: dotted;
@@ -193,7 +193,7 @@
 }
 .col-lg-4{
     &:last-child{
-        .step_flow_icon{
+        .dl_step_flow_icon{
             .arrow_img{
                 display: none;
             }

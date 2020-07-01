@@ -582,13 +582,63 @@
             });
         })
     }
+    var dl_twentytwenty_container_1 = $(".dl_twentytwenty_container[data-orientation!='vertical']");
+    if (dl_twentytwenty_container_1.length) {
+        dl_twentytwenty_container_1.twentytwenty({
+            default_offset_pct: 0.5
+        });
+    }
+    var dl_twentytwenty_container_2 =  $(".dl_twentytwenty_container[data-orientation='vertical']");
+    if (dl_twentytwenty_container_2.length) {
+        dl_twentytwenty_container_2.twentytwenty({
+            default_offset_pct: 0.5, orientation: 'vertical'
+        });
+    }
 
-    $(".dl_twentytwenty_container[data-orientation!='vertical']").twentytwenty({
-        default_offset_pct: 0.5
+    //portfolio grid js
+    $('.grid_filter_menu').on('click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $('.grid').isotope({
+            filter: filterValue
+        });
+        $('.grid_filter_menu button').removeClass('active');
+        $(this).addClass('active');
     });
-    $(".dl_twentytwenty_container[data-orientation='vertical']").twentytwenty({
-        default_offset_pct: 0.5, orientation: 'vertical'
-    });
+    var grid_portfolio = $('.minimal_grid_style');
+    if (grid_portfolio.length) {
+        grid_portfolio.imagesLoaded( function() {
+            grid_portfolio.isotope({
+                itemSelector: '.grid-item',
+                layoutMode: 'fitRows',
+                fitRows: {
+                    gutter: 10
+                }
+            });
+        })  
+    }
+
+    var grid_with_fitrow = $('.grid_with_fitrow');
+    if (grid_with_fitrow.length) {
+        grid_with_fitrow.imagesLoaded( function() {
+            grid_with_fitrow.isotope({
+                itemSelector: '.grid-item',
+                layoutMode: 'fitRows',
+            });
+        })  
+    }
+
+    var grid_with_fitrow_gutter = $('.grid_with_fitrow_gutter');
+    if (grid_with_fitrow_gutter.length) {
+        grid_with_fitrow_gutter.imagesLoaded( function() {
+            grid_with_fitrow_gutter.isotope({
+                itemSelector: '.grid-item',
+                layoutMode: 'fitRows',
+                fitRows: {
+                    gutter: 10
+                }
+            });
+        })  
+    }
       
 
 }(jQuery));

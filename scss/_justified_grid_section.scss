@@ -1,0 +1,52 @@
+.grid_filter_menu{
+    margin-bottom: 27px;
+    button{
+        border: 0px solid transparent;
+        background-color: transparent;
+        font-size: 13px;
+        color: #595b69;
+        margin: 0 40px 15px 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        @include transform_time(.3s);
+        padding: 0;
+        position: relative;
+        &:after{
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: -1px;
+            height: 2px;
+            width: 0;
+            background-color: $base_color;
+            @include transform_time(.3s);
+        }
+        &:hover{
+            color: $base_color;
+            &:after{
+                width: 100%;
+                
+            }
+        }
+    }
+}
+.minimal_grid_style{
+    .single_minimal_grid{
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
+.grid_with_fitrow_gutter{
+    .grid-item{
+        margin-bottom: 10px;
+    }
+}
+.dl_justified_grid_bg{
+    @include background ('../img/bg_6.png');
+    position: relative;
+    .grid_section_shape_1{
+        position: absolute;
+        left: 10%;
+        bottom: 10%;
+    }
+}

@@ -1,0 +1,107 @@
+.single_card_style {
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 40px 50px 0px rgba(6, 10, 36, 0.14);
+    position: relative;
+
+    .tricker {
+        background-color: rgb(84, 67, 249);
+        position: absolute;
+        height: 24px;
+        width: 65px;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: 700;
+        left: 40px;
+        top: 30px;
+    }
+
+    .single_card_content {
+        padding: 30px 40px;
+
+        h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            a{
+                color: $heading_color;
+                &:hover{
+                    color: $base_color;
+                }
+            }
+        }
+
+        .dl_cu_btn {
+            font-size: 14px;
+            font-weight: 700;
+            border-radius: 50px;
+            text-transform: capitalize;
+            padding: 9px 16px;
+            margin-top: 25px;
+
+            &:hover {
+                background-color: rgb(84, 67, 249);
+                border: 2px solid rgb(84, 67, 249);
+                color: $white;
+            }
+        }
+    }
+
+    &.style_2{
+        box-shadow: 0px 4px 6px 0px rgba(36, 24, 6, 0.08);
+        @include transform_time(.3s);
+        &:hover{
+            box-shadow: 0px 40px 50px 0px rgba(36, 24, 6, 0.14);
+        }
+        .price{
+            background-color: rgba(#0bbe6c, 0.14);
+            color: #0bbe6c;
+            height: 24px;
+            width: 65px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: inline-block;
+            line-height: 24px;
+            text-align: center;
+        }
+        .dl_cu_btn{
+            background-color: #f3f3f4;
+            border: 2px solid #f3f3f4;
+            color: #2c2c51;
+            border-radius: 0;
+            &:hover{
+                background-color: $base_color;
+                border: 2px solid $base_color;
+                color: $white;
+            }
+        }
+    }
+    &.style_3{
+        display: flex;
+        align-items: center;
+        padding: 22px;
+        background-color: #fff;
+        box-shadow: 0px 40px 70px 0px rgba(6, 10, 36, 0.14);
+        padding: 30px 60px;
+        span{
+            font-size: 20px;
+            color: #0bbe6c;
+            margin-bottom: 10px;
+        }
+        .dl_cu_btn{
+            border-radius: 6px;
+            padding: 9px 26px;
+        }
+
+    }
+}
+.card_style_section{
+    &.dl_sec_padding{
+        padding: 200px 0;
+    }
+}
+
+.card_section_bg{
+    @include background ("../img/bg_7.png");
+}

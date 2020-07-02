@@ -399,6 +399,9 @@ button:focus,
 .dl_img_compare_box_bg {
     @include background('../img/bg_5.png');
 }
+.logo_section_bg {
+    @include background('../img/bg_8.png');
+}
 .wave_bg {
     @include background('../img/wave_bg.png');
     background-position: top;

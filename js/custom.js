@@ -577,7 +577,7 @@
             gallery.isotope({
                 itemSelector: '.grid-item',
                 masonry: {
-                    gutter: 30
+                    gutter: 20
                 }
             });
         })

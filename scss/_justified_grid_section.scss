@@ -34,11 +34,88 @@
     .single_minimal_grid{
         display: inline-block;
         margin-bottom: 10px;
+        overflow: hidden;
+        border-radius: 6px;
+        
+    }
+    @media #{$xs_mobile}{
+        .grid-item{
+            width: 100%;
+            .single_minimal_grid {
+                display: block;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    @media #{$large_mobile}{
+        .grid-item{
+            width: 48%;
+            .single_minimal_grid {
+                display: block;
+                height: 175px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    @media #{$tab_device}{
+        .grid-item{
+            width: 31%;
+            .single_minimal_grid {
+                display: block;
+                height: 175px;
+            }
+            img{
+                width: 100%;
+            }
+        }
     }
 }
 .grid_with_fitrow_gutter{
+    .single_minimal_grid{
+        display: inline-block;
+    }
     .grid-item{
         margin-bottom: 10px;
+    }
+}
+.zoom_offect{
+    overflow: hidden;
+    img{
+        @include transform_time(.3s);
+        
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+.overlay_effect{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    &:after{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #060a24;
+        opacity: 0;
+        content: "";
+        transform: scale(.7);
+        @include transform_time(.3s);
+        opacity: 0;
+        visibility: hidden;
+    }
+    &:hover{
+        &:after{
+            transform: scale(1);
+            opacity: .5;
+            visibility: visible;
+        }
     }
 }
 .dl_justified_grid_bg{

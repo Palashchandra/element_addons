@@ -1,4 +1,4 @@
-.single_card_style {
+.single_blog_style {
     border-radius: 6px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 40px 50px 0px rgba(6, 10, 36, 0.14);
@@ -18,7 +18,7 @@
         top: 30px;
     }
 
-    .single_card_content {
+    .single_blog_content {
         padding: 30px 40px;
         @media #{$xs_mobile}{
             padding: 20px 15px;
@@ -108,12 +108,12 @@
 
     }
 }
-.card_style_section{
+.blog_style_section{
     &.dl_sec_padding{
         padding: 200px 0;
     }
 }
-.single_card_style  .circle_shape_1 {
+.single_blog_style  .circle_shape_1 {
     border-radius: 50%;
     background: #f1faec;
     position: absolute;
@@ -124,6 +124,6 @@
     z-index: -1;
     top: -100px;
   }
-.card_section_bg{
+.blog_section_bg{
     @include background ("../img/bg_7.png");
 }

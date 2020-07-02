@@ -1,11 +1,22 @@
 .dl_simple_image_grid {
     .grid-item {
-        width: 17.9%;
-        margin-bottom: 30px;
+        width: 18.5%;
+        margin-bottom: 20px;
         display: inline-block;
+        @media #{$xs_mobile}{
+            width: 45%;
+        }
+        @media #{$large_mobile}{
+            width: 30%;
+        }
+        @media #{$tab_device}{
+            width: 30%;
+        }
+        @media #{$medium_device}{
+            width: 18%;
+        }
     }
 }
-
 .dl_img_grid_section {
     .dl_single_img_grid{
         margin-bottom: 30px;

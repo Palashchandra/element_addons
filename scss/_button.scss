@@ -298,11 +298,11 @@
 .btn_arrow {
     position: relative;
     padding-right: 27px;
-    color: #051441;
-    font-size: 18px;
+    color: #0bbe6c;
+    font-size: 15px;
     font-weight: 600;
     display: inline-block;
-
+    line-height: 25px;
     img {
         position: absolute;
         right: 0;
@@ -311,7 +311,7 @@
     }
 
     i {
-        font-size: 16px;
+        font-size: 21px;
         margin-left: 8px;
         -webkit-transition: 0.3s;
         transition: 0.3s;
@@ -321,11 +321,11 @@
     }
 
     &:hover {
-
+        color: #0bbe6c;
         i,
         img {
             transform: translateX(5px);
-            color: $base_color;
+            color: #0bbe6c;
         }
     }
 }
@@ -526,19 +526,70 @@ button:active {
 button:focus {
     outline: 0;
 }
+.animate_border {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: $heading_color;
+    display: inline-block;
+    background-color: transparent;
+    &:after,
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+    }
 
+    &:before {
+        opacity: 0;
+        -webkit-transition-duration: .6s;
+        transition-duration: .6s;
+        -webkit-transition-delay: .2s;
+        transition-delay: .2s;
+        -webkit-transition-property: opacity;
+        transition-property: opacity;
+        z-index: -1;
+    }
+
+    &:after {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: right;
+        transform-origin: right;
+        -webkit-transition-duration: .3s;
+        transition-duration: .3s;
+        -webkit-transition-timing-function: cubic-bezier(.075, .82, .165, 1);
+        transition-timing-function: cubic-bezier(.075, .82, .165, 1);
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        z-index: -1;
+        background-color: $base_color;
+    }
+
+    &:hover:after {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        transform-origin: left;
+        -webkit-transform-origin: left;
+    }
+
+    &:hover:before {
+        opacity: 1;
+    }
+}
 .read_more_btn {
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
-    margin-top: 20px;
     color: $heading_color;
-
+    position: relative;
     &:hover {
         color: $base_color;
-    }
-
-    @media #{$tab} {
-        margin-top: 10px;
     }
 }

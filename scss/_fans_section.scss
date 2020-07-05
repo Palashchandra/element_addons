@@ -1,0 +1,130 @@
+.fans_section_bg{
+    position: relative;
+    z-index: 1;
+    .fans_bg_shape{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    .fans_section_shape_2{
+        position: absolute;
+        left: 7%;
+        top: 30%;
+    }
+    .fans_section_shape_3{
+        position: absolute;
+        left: 10%;
+        bottom: -14%;
+    }
+    .fans_section_shape_1{
+        position: absolute;
+        right: 10%;
+        top: 45%;
+    }
+}
+.single_fans_member {
+    text-align: center;
+    @media #{$tab}{
+        margin-bottom: 30px;
+    }
+    &.style_1{
+        border-radius: 6px;
+        background-color: $white;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 40px 50px 0px rgba(6, 10, 36, 0.1);
+        overflow: hidden;
+        padding: 35px 15px 40px;
+        .fans_title{
+            font-size: 50px;
+            font-weight: 600;
+            margin-top: 26px;
+            margin-bottom: 0;
+        }
+    }
+    &.style_2{
+        border-radius: 6px;
+        background-color: $white;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 20px 50px 0px rgba(64, 1, 9, 0.1);
+        overflow: hidden;
+        padding: 55px 15px 61px;
+        .fans_title{
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 0;
+            color: $base_color;
+        }
+        &.center{
+            transform: scale(1.25);
+            position: relative;
+            z-index: 9;
+            .fans_title{
+                color: #554afe;
+            }
+        }
+    }
+    &.style_3{
+        text-align: center;
+        .single_fans_img{
+            border-width: 2px;
+            border-color: rgb(242, 239, 235);
+            border-style: solid;
+            border-radius: 50%;
+            height: 116px;
+            width: 116px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        .fans_title{
+            font-size: 50px;
+            font-weight: 400;
+            margin-top: 16px;
+            margin-bottom: 0;
+        }
+    }
+    &.style_4{
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 30px 60px 0px rgba(6, 10, 36, 0.1);
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        .fans_title{
+            font-size: 50px;
+            font-weight: 700;
+            margin-top: 16px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.bg___icon {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 4078px;
+    z-index: 114;
+  }
+  .img___bg {
+    border-width: 2px;
+    border-color: rgb(242, 239, 235);
+    border-style: solid;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 375px;
+    top: 1996px;
+    width: 116px;
+    height: 116px;
+    z-index: 112;
+  }
+  
+  

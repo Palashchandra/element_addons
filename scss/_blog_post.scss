@@ -4,17 +4,16 @@
     box-shadow: 0px 40px 50px 0px rgba(6, 10, 36, 0.14);
     position: relative;
     @media #{$tab}{
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     .tricker {
         background-color: rgb(84, 67, 249);
-        position: absolute;
         height: 24px;
         width: 65px;
-        border-radius: 12px;
         font-size: 12px;
         font-weight: 700;
-        left: 40px;
+        border-radius: 4px;
+        right: 40px;
         top: 30px;
     }
 
@@ -23,14 +22,32 @@
         @media #{$xs_mobile}{
             padding: 20px 15px;
         }
-        h4 {
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li{
+                display: inline-block;
+                font-size: 14px;
+                margin-right: 30px;
+                margin-bottom: 10px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                i{
+                    color: #554bfe;
+                    margin-right: 5px;
+                }
+            }
+        }
+        h3,h4 {
             font-size: 20px;
             font-weight: 700;
             margin-bottom: 10px;
             a{
                 color: $heading_color;
                 &:hover{
-                    color: $base_color;
+                    color: #554bfe;
                 }
             }
         }
@@ -40,48 +57,51 @@
             font-weight: 700;
             border-radius: 50px;
             text-transform: capitalize;
-            padding: 9px 16px;
+            padding: 11px 17px;
             margin-top: 25px;
+            background-color: rgba($color: #554bfe, $alpha: .1);
+            color: rgba($color: #554bfe, $alpha: 1);
+            border-radius: 4px;
+            border: 0px solid transparent;
             @media #{$xs_mobile}{
                 margin-top: 15px;
             }
             &:hover {
-                background-color: rgb(84, 67, 249);
-                border: 2px solid rgb(84, 67, 249);
+                background-color: rgba($color: #554bfe, $alpha: 1);
                 color: $white;
             }
         }
     }
 
     &.style_2{
-        box-shadow: 0px 4px 6px 0px rgba(36, 24, 6, 0.08);
         @include transform_time(.3s);
-        &:hover{
-            box-shadow: 0px 40px 50px 0px rgba(36, 24, 6, 0.14);
-        }
-        .price{
-            background-color: rgba(#0bbe6c, 0.14);
-            color: #0bbe6c;
-            height: 24px;
-            width: 65px;
-            font-size: 12px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            display: inline-block;
-            line-height: 24px;
-            text-align: center;
-        }
-        .dl_cu_btn{
-            background-color: #f3f3f4;
-            border: 2px solid #f3f3f4;
-            color: #2c2c51;
-            border-radius: 0;
-            &:hover{
-                background-color: $base_color;
-                border: 2px solid $base_color;
-                color: $white;
+        background-color: transparent;
+        box-shadow: none;
+        .single_blog_content{
+            padding: 20px 0 0;
+            h4{
+                margin-bottom: 17px;
+            }
+            a{
+                &:hover{
+                    color: $base_color;
+                }
             }
         }
+        span{
+            font-size: 14px;
+            margin-bottom: 8px;
+            &.color_1{
+                color: #0092ff;
+            }
+            &.color_2{
+                color: #ff807f;
+            }
+            &.color_3{
+                color: #9a6af7;
+            }
+        }
+        
     }
     &.style_3{
         display: flex;
@@ -96,21 +116,83 @@
                 width: 100%;
             }
         }
+        .single_blog_content ul li i {
+            color: #0bbe6c;
+        }
+        h3{
+            margin-bottom: 28px;
+            a{
+                &:hover{
+                    color: #0bbe6c;
+                }
+            }
+        }
         span{
             font-size: 20px;
             color: #0bbe6c;
             margin-bottom: 10px;
         }
-        .dl_cu_btn{
-            border-radius: 6px;
-            padding: 9px 26px;
+        h3{
+            font-size: 26px;
+            font-weight: 38px;
+        }
+        .btn_arrow{
+            margin-top: 25px;
         }
 
+    }
+    &.style_4{
+        @include transform_time(.3s);
+        background-color: transparent;
+        box-shadow: none;
+        .single_blog_content{
+            padding: 20px 0 0;
+            ul{
+                li{
+                    text-transform: uppercase;
+                    i{
+                        color: $base_color;
+                    }
+                }
+            }
+            h4{
+                margin-bottom: 22px;
+                line-height: 1.5;
+                a{
+                    &:hover{
+                        color: $base_color;
+                    }
+                }
+            }
+        }
     }
 }
 .blog_style_section{
     &.dl_sec_padding{
         padding: 200px 0;
+        @media #{$tab}{
+            padding: 80px 0;
+        }
+    }
+    position: relative;
+    .dl_blog_shape_1{
+        position: absolute;
+        left: 5%;
+        top: 50%;
+    }
+    .dl_blog_shape_2{
+        position: absolute;
+        right: 5%;
+        bottom: 14%;
+    }
+    .dl_blog_shape_3{
+        position: absolute;
+        right: -11%;
+        top: -33%;
+        z-index: -1;
+        @media #{$tab}{
+            right: 0;
+        }
     }
 }
 .single_blog_style  .circle_shape_1 {
@@ -125,5 +207,6 @@
     top: -100px;
   }
 .blog_section_bg{
-    @include background ("../img/bg_7.png");
+    @include background ("../img/bg_9.png");
+    background-position: top right;
 }

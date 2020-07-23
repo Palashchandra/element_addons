@@ -402,7 +402,7 @@ button:focus,
 .logo_section_bg {
     @include background('../img/bg_8.png');
 }
-.fans_section_bg {
+.fans_section_bg_img {
     @include background('../img/bg_10.png');
 }
 .wave_bg {
@@ -410,12 +410,17 @@ button:focus,
     background-position: top;
 }
 
-.slider_margin{
-    margin: -60px -30px;
-    padding: 60px 30px !important;
+.royal_color{
+    color: #2B93FE;
 }
-.swiper-container-horizontal{
-    overflow: hidden;
+.orange_color{
+    color: #feac1e;
+}
+.pink_color{
+    color: #f931a2;
+}
+.aqua_color{
+    color: #00C99C;
 }
 @media #{$tab} {
     br {

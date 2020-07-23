@@ -26,7 +26,7 @@
 .single_fans_member {
     text-align: center;
     @media #{$tab}{
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     &.style_1{
         border-radius: 6px;
@@ -59,6 +59,9 @@
             transform: scale(1.25);
             position: relative;
             z-index: 9;
+            @media #{$tab}{
+                transform: scale(1);
+            }
             .fans_title{
                 color: #554afe;
             }
@@ -96,6 +99,9 @@
         align-items: center;
         justify-content: center;
         margin: 0 auto;
+        @media #{$tab}{
+            margin-bottom: 40px;
+        }
         .fans_title{
             font-size: 50px;
             font-weight: 700;
@@ -104,27 +110,4 @@
         }
     }
 }
-
-.bg___icon {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 1920px;
-    height: 4078px;
-    z-index: 114;
-  }
-  .img___bg {
-    border-width: 2px;
-    border-color: rgb(242, 239, 235);
-    border-style: solid;
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    left: 375px;
-    top: 1996px;
-    width: 116px;
-    height: 116px;
-    z-index: 112;
-  }
-  
   

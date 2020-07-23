@@ -575,7 +575,7 @@ button:focus,
   background-size: cover;
 }
 
-.fans_section_bg {
+.fans_section_bg_img {
   background-image: url("../img/bg_10.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -590,13 +590,20 @@ button:focus,
   background-position: top;
 }
 
-.slider_margin {
-  margin: -60px -30px;
-  padding: 60px 30px !important;
+.royal_color {
+  color: #2B93FE;
 }
 
-.swiper-container-horizontal {
-  overflow: hidden;
+.orange_color {
+  color: #feac1e;
+}
+
+.pink_color {
+  color: #f931a2;
+}
+
+.aqua_color {
+  color: #00C99C;
 }
 
 @media (max-width: 991px) {
@@ -5211,7 +5218,7 @@ button:focus {
 }
 @media (max-width: 991px) {
   .single_fans_member {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 }
 .single_fans_member.style_1 {
@@ -5246,6 +5253,11 @@ button:focus {
   transform: scale(1.25);
   position: relative;
   z-index: 9;
+}
+@media (max-width: 991px) {
+  .single_fans_member.style_2.center {
+    transform: scale(1);
+  }
 }
 .single_fans_member.style_2.center .fans_title {
   color: #554afe;
@@ -5283,34 +5295,16 @@ button:focus {
   justify-content: center;
   margin: 0 auto;
 }
+@media (max-width: 991px) {
+  .single_fans_member.style_4 {
+    margin-bottom: 40px;
+  }
+}
 .single_fans_member.style_4 .fans_title {
   font-size: 50px;
   font-weight: 700;
   margin-top: 16px;
   margin-bottom: 0;
-}
-
-.bg___icon {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1920px;
-  height: 4078px;
-  z-index: 114;
-}
-
-.img___bg {
-  border-width: 2px;
-  border-color: #f2efeb;
-  border-style: solid;
-  border-radius: 50%;
-  background-color: white;
-  position: absolute;
-  left: 375px;
-  top: 1996px;
-  width: 116px;
-  height: 116px;
-  z-index: 112;
 }
 
 @media (max-width: 991px) {

@@ -38,7 +38,7 @@ License: MIT
         thickness: 'auto',
 
         /**
-         Fill of the arc. You may set it to:
+        Fill of the arc. You may set it to:
            - solid color:
              - { color: '#3aeabb' }
              - { color: 'rgba(255, 255, 255, .3)' }
